@@ -42,7 +42,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-feather-light)
+(setq doom-theme 'doom-moonlight)
 (add-to-list 'default-frame-alist '(alpha-background . 80))
 (setq doom-modeline-height 35)
 (setq doom-modeline-icon t)
@@ -56,7 +56,10 @@
 (remove-hook 'prog-mode-hook #'vi-tilde-fringe-mode)
 
 ;; Enable Discord RPC
-(elcord-mode 1)
+(elcord-mode)
+(setq elcord-editor-icon "emacs_material_icon")
+(setq elcord-idle-message "Twiddling her thumbs...")
+(setq elcord--editor-name "GNU Emacs")
 
 ;; Configure spdx.el
 (map! :leader :desc "Insert SPDX-License-Identifier" "i l" #'spdx-insert-spdx)
