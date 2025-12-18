@@ -94,6 +94,19 @@
   (add-to-list 'nerd-icons-extension-icon-alist
                '("astro" nerd-icons-devicon "nf-dev-astro" :face nerd-icons-orange)))
 
+;; Dashboard customizations
+;;
+;; Disable keymap display
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
+;; Disable footer
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-footer)
+
+;; Replace banner
+(defun doom-dashboard-widget-banner ()
+  (insert "\n" "Were you looking for something?")
+  (center-line)
+  (insert "\n"))
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
