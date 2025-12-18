@@ -107,6 +107,12 @@
   (center-line)
   (insert "\n"))
 
+;; Title format
+(setq frame-title-format
+      '((:eval (if (buffer-file-name)
+                   (abbreviate-file-name (buffer-file-name)) "%b"))
+        (:eval (if (buffer-modified-p) " •")) " - GNU Emacs"))
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
