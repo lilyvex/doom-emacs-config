@@ -8,3 +8,4 @@
 (load! "configuration/vterm-config.el")
 (load! "configuration/org-config.el")
 (load! "configuration/astro-config.el")
+(load! "configuration/modeline-config.el")
