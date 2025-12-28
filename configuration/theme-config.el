@@ -20,3 +20,6 @@
       '((:eval (if (buffer-file-name)
                    (abbreviate-file-name (buffer-file-name)) "%b"))
         (:eval (if (buffer-modified-p) " •")) " - GNU Emacs"))
+
+(setq lsp-ui-sideline-show-diagnostics nil)
+(setq lsp-ui-sideline-show-hover 1)
