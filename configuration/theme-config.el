@@ -1,9 +1,9 @@
 ;; -*- lexical-binding: t; -*-
 
-(setq doom-theme 'doom-moonlight)
+(setq doom-theme 'modus-vivendi)
 (add-to-list 'default-frame-alist
              '(alpha-background . 80))
-(setq doom-modeline-height 35)
+(setq doom-modeline-height 20)
 (setq doom-modeline-icon t)
 (setq display-line-numbers-type 'relative)
 (remove-hook 'text-mode-hook #'vi-tilde-fringe-mode)
